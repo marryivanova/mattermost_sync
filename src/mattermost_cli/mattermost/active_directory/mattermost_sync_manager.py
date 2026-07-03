@@ -3,9 +3,9 @@ import typing as t
 from loguru import logger
 
 from config.settings import settings
-from src.mattermost_backend.helpers.models import GroupInfo, UserInfo
-from src.mattermost_backend.ldap.client import LDAPClient
-from src.mattermost_backend.mattermost.api_mattermost_sync.mattermost_client import MattermostClient
+from src.mattermost_cli.helpers.models import GroupInfo, UserInfo
+from src.mattermost_cli.ldap.client import LDAPClient
+from src.mattermost_cli.mattermost.api_mattermost_sync.mattermost_client import MattermostClient
 
 
 class MattermostSyncManager:

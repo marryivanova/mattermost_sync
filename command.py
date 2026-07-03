@@ -3,8 +3,8 @@ from typing import Optional
 import typer
 
 from config.settings import settings
-from src.mattermost_backend.command.synchronizer import ChannelsSynchronizer, TeamSynchronizer
-from src.mattermost_backend.mattermost.api_mattermost_sync.mattermost_client import MattermostClient
+from src.mattermost_cli.command.synchronizer import ChannelsSynchronizer, TeamSynchronizer
+from src.mattermost_cli.mattermost.api_mattermost_sync.mattermost_client import MattermostClient
 
 mm_client = MattermostClient(
     token=settings.MATTERMOST_TOKEN,

@@ -8,7 +8,7 @@ from loguru import logger
 from config.database import get_db
 from config.settings import settings
 from db.repositories.command_logs_repository import CommandLogsRepository
-from src.mattermost_backend.helpers.models import (
+from src.mattermost_cli.helpers.models import (
     CommandLog,
     ResultChannel,
     ResultTeams,
@@ -16,15 +16,15 @@ from src.mattermost_backend.helpers.models import (
     SyncChannelsParams,
     SyncResult,
 )
-from src.mattermost_backend.mattermost.active_directory.mattermost_sync_manager import (
+from src.mattermost_cli.mattermost.active_directory.mattermost_sync_manager import (
     MattermostSyncManager,
 )
-from src.mattermost_backend.mattermost.api_mattermost_sync.mattermost_client import MattermostClient
-from src.mattermost_backend.mattermost.api_mattermost_sync.run_script_teams import (
+from src.mattermost_cli.mattermost.api_mattermost_sync.mattermost_client import MattermostClient
+from src.mattermost_cli.mattermost.api_mattermost_sync.run_script_teams import (
     client,
     sync_group_users_to_team,
 )
-from src.mattermost_backend.mattermost.api_mattermost_sync.run_sync_channels import (
+from src.mattermost_cli.mattermost.api_mattermost_sync.run_sync_channels import (
     get_channels_data,
     get_user_data,
     process_channel,

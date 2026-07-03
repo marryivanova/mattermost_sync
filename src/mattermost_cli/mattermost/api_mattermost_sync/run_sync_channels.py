@@ -1,11 +1,11 @@
 from loguru import logger
 
 from config.settings import settings
-from src.mattermost_backend.helpers.models import Counters
-from src.mattermost_backend.mattermost.active_directory.mattermost_sync_manager import (
+from src.mattermost_cli.helpers.models import Counters
+from src.mattermost_cli.mattermost.active_directory.mattermost_sync_manager import (
     MattermostSyncManager,
 )
-from src.mattermost_backend.mattermost.api_mattermost_sync.mattermost_client import MattermostClient
+from src.mattermost_cli.mattermost.api_mattermost_sync.mattermost_client import MattermostClient
 
 
 def initialize_mattermost_client():
