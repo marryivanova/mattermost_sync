@@ -20,9 +20,7 @@
 
 ```mermaid
 graph LR
-    A[LDAP Server] --> B[Sync Service]
-    B --> C[Mattermost API]
-    B --> D[Sentry]
+    A[LDAP Server] --> B[Sync Service] --> C[Mattermost CLI]
 ```
 ## 🚀 Как использовать
 Замените имя-команды или имя-канала на фактические значения.
@@ -52,8 +50,9 @@ python command.py sync-channels --channel-name "имя-канала"
 🧪 Тестовый режим (Dry Run)
 Для проверки изменений без фактического применения (имитация) добавьте флаг `--dry-run`:
 
-Для команды: `python command.py sync-team --team-name "имя-команды" --dry-run`
-Для канала: `python command.py sync-channels --channel-name "имя-канала" --dry-run`
-Примечание: Скрипт автоматически выявит отсутствующих пользователей и добавит их, а также удалит неактивных участников в соответствии с данными LDAP.
+**Для команды** - `python command.py sync-team --team-name "имя-команды" --dry-run`
+**Для канала** - `python command.py sync-channels --channel-name "имя-канала" --dry-run`
+
+* Примечание: Скрипт автоматически выявит отсутствующих пользователей и добавит их, а также удалит неактивных участников в соответствии с данными LDAP.
 
 
