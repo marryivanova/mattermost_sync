@@ -1,7 +1,7 @@
 # 🔄 Mattermost LDAP Group Sync
 
 ![GitHub](https://img.shields.io/badge/license-MIT-blue)
-![Python](https://img.shields.io/badge/python-3.8%2B-blue)
+![Python](https://img.shields.io/badge/python-3.11%2B-blue)
 ![Mattermost](https://img.shields.io/badge/Mattermost-5%2B-orange)
 ![LDAP](https://img.shields.io/badge/LDAP-support-green)
 
